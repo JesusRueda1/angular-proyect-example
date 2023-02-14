@@ -4,11 +4,12 @@ import { CreateProductComponent } from './components/create-product/create-produ
 import { ListProductsComponent } from './components/list-products/list-products.component';
 
 const routes: Routes = [
-   { path: '', component: ListProductsComponent },
-   { path: 'create-product', component: CreateProductComponent },
-   { path: 'edit-product/:id', component: CreateProductComponent },
-   { path: '**', redirectTo: '', pathMatch: 'full' }
- ];
+  { path: '', component: ListProductsComponent },
+  { path: 'create-product', component: CreateProductComponent },
+  { path: 'edit-product/:id', component: CreateProductComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' }
+];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
