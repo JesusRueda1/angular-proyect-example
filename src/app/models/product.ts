@@ -6,7 +6,6 @@ export class Product{
     status: string;
   
     constructor(name: string, category: string, price: number, status: string){
-  
       this.name = name;
       this.category = category;
       this.price = price;
